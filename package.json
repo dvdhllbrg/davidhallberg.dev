@@ -1,0 +1,21 @@
+{
+  "name": "davidhallberg.design",
+  "version": "1.0.0",
+  "scripts": {
+    "watch-sass": "node-sass src/style.scss dist/style.css --watch",
+    "build-sass": "node-sass src/style.scss src/style.css",
+    "prefix-css": "postcss --use autoprefixer --use cssnano -o dist/style.css src/style.css",
+    "watch-js": "babel src/script.js --watch --out-file dist/script.js"
+  },
+  "private": true,
+  "author": "David Hallberg Jönsson",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "autoprefixer": "^9.7.3",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3"
+  }
+}
