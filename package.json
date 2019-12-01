@@ -7,7 +7,10 @@
     "prefix-css": "postcss --use autoprefixer --use cssnano -o dist/style.css src/style.css",
     "watch-js": "babel src/script.js --watch --out-file dist/script.js",
     "build-js": "babel src/script.js --out-file dist/script.js",
-    "build-pug": "pug src --out dist"
+    "build-pug": "pug src --out dist",
+    "copy:images": "copyfiles -u 2 src/images/* dist/images",
+    "copy:video": "copyfiles -u 2 src/video/* dist/video",
+    "build": "yarn run build-pug && yarn run build-js && yarn run build-sass && yarn run prefix-css && yarn run copy:images && yarn run copy:video"
   },
   "private": true,
   "author": "David Hallberg Jönsson",
@@ -16,6 +19,7 @@
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "autoprefixer": "^9.7.3",
+    "copyfiles": "^2.1.1",
     "cssnano": "^4.1.10",
     "node-sass": "^4.13.0",
     "postcss-cli": "^6.1.3",
