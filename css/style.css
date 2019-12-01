@@ -1,0 +1,85 @@
+body, .subtitle {
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Karla;
+}
+a {
+	color: #0248b9;
+}
+.navbar-item a {
+	color: #fff;
+}
+.title.is-3 {
+	margin-top: 1rem;
+	margin-bottom: 0.6rem;
+}
+.container > .title.is-4 {
+	margin-top: 1rem;
+	margin-bottom: 0.4rem;
+}
+.hero-body .title {
+	font-size: 7rem;
+}
+.hero-body .subtitle {
+	padding-left: 0.5rem;
+}
+.avatar {
+	border-radius: 100%;
+	max-width: 256px;
+}
+.card-link {
+	margin-top: 1.5rem;
+}
+.contact a {
+	color: hsl(0, 0%, 71%);
+}
+.contact a:hover{
+	color: hsl(0, 0%, 21%);
+}
+.project-quote {
+	margin-bottom: 1.5rem;
+}
+.section:not(:last-of-type) {
+	padding-bottom: 0rem;
+}
+dl, ol {
+	margin-top: 0.5rem;
+	margin-left: 1.5rem;
+}
+dd {
+	padding: 0.5rem 0 0.5rem 1rem;
+}
+dt {
+	font-weight:bold;
+}
+video {
+	margin-top: 1rem;
+}
+figure video {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+	top: 0;
+	margin-top: 0;
+	height: 100%;
+	width: 100%;
+}
+.image.fig {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.fig figcaption {
+	position: relative;
+	font-style: italic;
+	padding: 0.5rem;
+	color: hsl(0, 0%, 96%);
+	background: rgba(0, 0, 0, 0.5);
+}
+p {
+	margin-bottom: 0.5rem;
+}
