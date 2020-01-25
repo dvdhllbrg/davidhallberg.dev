@@ -11,7 +11,7 @@
     "copy:images": "copyfiles -u 2 src/images/* dist/images",
     "copy:video": "copyfiles -u 2 src/video/* dist/video",
     "copy:fonts": "copyfiles -u 2 src/fonts/* dist/fonts",
-    "build": "yarn run build-pug && yarn run build-js && yarn run build-sass && yarn run prefix-css && yarn run copy:images && yarn run copy:video"
+    "build": "yarn run build-pug && yarn run build-js && yarn run build-sass && yarn run prefix-css && yarn run copy:images && yarn run copy:video && yarn run copy:fonts"
   },
   "private": true,
   "author": "David Hallberg Jönsson",
