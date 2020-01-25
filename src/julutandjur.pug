@@ -1,137 +1,136 @@
 doctype html
 html(lang="en")
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    meta(name="description" content="I am David Hallberg Jönsson, a UX designer in Gothenburg, Sweden. I help humans and computers get along.")
-    title Jul utan djur case study | David Hallberg Jönsson
-    link(rel="preconnect" href="https://use.typekit.net")
-    link(rel="stylesheet" href="https://use.typekit.net/plx7xbp.css?display=swap")
-    link(rel="stylesheet" href="style.css")
-    script(src="script.js")
-body
-    nav
-        a(href="/") Home
-    header
-        div
-            h1 Jul utan djur
-            p.subtitle Inspiring a more ethical and sustainable holiday food tradition.
-    #container
-        aside
-            nav(aria-labelledby="tocHeader")
-                h1#tocHeader Table of contents
-                ol#toc
-                    li
-                        a(href="#projectOverview") Project overview
-                    li
-                        a(href="#problem") Problem
-                    li
-                        a(href="#designProcess") Design process
-                        ol
-                            li
-                                a(href="#idea") Idea & Research
-                            li
-                                a(href="#prototyping") Sketching
-                            li
-                                a(href="#coding") Coding & Content Creation
-                    li
-                        a(href="#result") Result
-                    li
-                        a(href="#reflections") Reflections
-                    
-        main
-            article
-                section
-                    h1#projectOverview.sectionHeader 1. Project overview
-                    p 
-                        i How can people be made aware of existing alternatives to their traditional food choices? How can the obstacles to affecting positive change in one's food customs be lowered?
-                    #details.grid
-                        div
-                            span.subtitle Context
-                            ul
-                                li One month
-                                li Personal project
-                        div
-                            span.subtitle Teammates
-                            ul  
-                                li None
-                        div
-                            span.subtitle My contribution
-                            ul  
-                                li Concept generation
-                                li UX/visual design
-                                li UX Implmentation
-                    p
-                        a(href="https://julutandjur.se") Jul utan djur 
-                        |("Christmas without animals") is a website containing a collection of vegan recipes of traditional Swedish Christmas dishes. The intention is to showcase the numerous vegan Christmas dishes that have been created and inspire people to make an ethical and sustainable choice. To date, roughly 7,000 users have visisted the website.
-
-                    figure
-                        picture
-                            source(srcset="/images/julutandjur-recipes.webp" type="image/webp")
-                            img(src="/images/julutandjur-recipes.png" alt="A screenshot showing a website with the title \"Jul utan djur\" and a grid displaying pictures of food with text underneath.")
-                        figcaption Figure 1. Recipe overview page of the Jul utan djur website.
-                section
-                    h1#problem.sectionHeader 2. Problem
-                    p Christmas time is wonderful in many aspects, but it is not great for animals: 400,000 Swedish pigs are killed every December, just to put meat on the table. Swedish Christmas food traditionally contains a lot of meat and fish, but nothing says that is the way it has to be. There are multitudes of great vegan recipes reinventing the Swedish tradition, and more coming every year. Jul utan djur was an attempt to gather the best of these recipes in the same place, to create a one stop shop for people looking to make their traditions more ethical and sustainable.
-                section
-                    h1#designProcess.sectionHeader 3. Design Process
-                    p For this project, I played every role in the product chain: client, designer, coder, content creator (or rather, content gatherer - more on that later). This allowed me a great degree of freedom, but also meant that I had be careful to not go outside my scope. Furthermore, I came up with the idea in late October and decided that December 1st would be the perfect date to launch a project like this, giving me a neat one month timeframe.
-                    div
-                        h2#idea.sectionHeader 3.1. Idea & research
-                        p The idea arose spontaneously one day, and the work on it consisted mostly of verifying and developing it. To get inspired and gather information about existing patterns and conventions I explored a number of recipe websites, taking note on how they organized information, handled navigation, and so forth.
-                    div
-                        h2#sketching.sectionHeader 3.2. Sketching
-                        p When planning the layout and structure I decided to stick close to the identified recipe website format (because consistency is good) while still attempting to simplify things wherever I saw the possibility. Visually, I wanted to keep things simple and minimalistic in order to let the user really focus on the content - the recipes. 
-                        figure
-                            picture
-                                source(srcset="/images/julutandjur-sketches.webp" type="image/webp")
-                                img(src="/images/julutandjur-sketches.jpg" alt="Five post-it notes containing various pencil sketches of possible website layouts.")
-                            figcaption Figure 2. Rapid sketches on post-it notes.
-                        p Apart from the Start page and the About page, the site consists of three different views: a recipe overview page, showing all existing recipe categories; a category recipe page, showing recipes for a particular category; and the single recipe page, showing the recipe itself. On both the overview and the category pages there is a search field, allowing users to simply start typing in order to filter the displayed recipes.
-                    div
-                        h2#coding.sectionHeader 3.3 Coding & Content Creation
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="description" content="I am David Hallberg Jönsson, a UX designer in Gothenburg, Sweden. I help humans and computers get along.")
+        title Jul utan djur case study | David Hallberg Jönsson
+        link(rel="stylesheet" href="style.css")
+        script(src="script.js")
+    body
+        nav
+            a(href="/") Home
+        header
+            div
+                h1 Jul utan djur
+                p.subtitle Inspiring a more ethical and sustainable holiday food tradition.
+        #container
+            aside
+                nav(aria-labelledby="tocHeader")
+                    h2#tocHeader Table of contents
+                    ol#toc
+                        li
+                            a(href="#projectOverview") Project overview
+                        li
+                            a(href="#problem") Problem
+                        li
+                            a(href="#designProcess") Design process
+                            ol
+                                li
+                                    a(href="#idea") Idea & Research
+                                li
+                                    a(href="#prototyping") Sketching
+                                li
+                                    a(href="#coding") Coding & Content Creation
+                        li
+                            a(href="#result") Result
+                        li
+                            a(href="#reflections") Reflections
+                        
+            main
+                article
+                    section
+                        h2#projectOverview.sectionHeader 1. Project overview
+                        p 
+                            i How can people be made aware of existing alternatives to their traditional food choices? How can the obstacles to affecting positive change in one's food customs be lowered?
+                        #details.grid
+                            div
+                                span.subtitle Context
+                                ul
+                                    li One month
+                                    li Personal project
+                            div
+                                span.subtitle Teammates
+                                ul  
+                                    li None
+                            div
+                                span.subtitle My contribution
+                                ul  
+                                    li Concept generation
+                                    li UX/visual design
+                                    li UX Implmentation
                         p
-                            |For implementing the frontend, I wanted to keep things lightweight and fell for the
-                            a(href="https://getskeleton.com") Skeleton CSS framework
-                            |, which had every feature I wanted and very little else. For easier organization and updateability, the frontend was built using React, which was the hippest framework at the time and worked very well in this implementation. To serve all this, I decided to keep it simple and stick to what I knew, and so went with an Express server in a basic configuration.
-                        p As soon as the structure was in place it was time to start filling it with content. This meant gathering recipes! To do this, I simply looked online for great recipes, and whenever I found a good one, I simply contacted the creator and asked if I could use it. Everyone was incredibly nice and most agreed to not only let me use the recipes but also their pictures of the dishes. For the few recipes where this was not a case, or where there were no pictures of the dishes, I simply had to cook up a (delicious) batch and take pictures myself. 
-                section
-                    h1#result.sectionHeader 4. Result
-                    p 
-                        |The final result was launched on December 1st, and drew over a thousand visitors on the first day. It can be visited on 
-                        a(href="https://julutandjur.se") julutandjur.se
-                        |.
-                    #figures.grid
-                        figure
-                            picture
-                                source(srcset="/images/julutandjur-start.webp" type="image/webp")
-                                img(src="/images/julutandjur-start.jpg" alt="A screenshot showing a website with the title \"Jul utan djur\" and four paragraphs of text.")
-                            figcaption Figure 3. The starting page or the Jul utan djur website.
+                            a(href="https://julutandjur.se") Jul utan djur 
+                            |("Christmas without animals") is a website containing a collection of vegan recipes of traditional Swedish Christmas dishes. The intention is to showcase the numerous vegan Christmas dishes that have been created and inspire people to make an ethical and sustainable choice. To date, roughly 7,000 users have visisted the website.
+
                         figure
                             picture
                                 source(srcset="/images/julutandjur-recipes.webp" type="image/webp")
                                 img(src="/images/julutandjur-recipes.png" alt="A screenshot showing a website with the title \"Jul utan djur\" and a grid displaying pictures of food with text underneath.")
-                            figcaption Figure 4. The recipe overview page.
-                        figure
-                            picture
-                                source(srcset="/images/julutandjur-category.webp" type="image/webp")
-                                img(src="/images/julutandjur-category.jpg" alt="A screenshot showing a website with the title \"Jul utan djur\" and a grid displaying pictures of food with text underneath.")
-                            figcaption Figure 5. The "herring" category recipes page.
-                        figure
-                            picture
-                                source(srcset="/images/julutandjur-recipe.webp" type="image/webp")
-                                img(src="/images/julutandjur-recipe.png" alt="A screenshot showing a website with the title \"Jul utan djur\" and a recipe page, showing a description, a picture of the finished dish, a list of ingredients, and a set of instructions.")
-                            figcaption Figure 6. The recipe page.
-                section
-                    h1#reflections.sectionHeader 5. Reflections
-                    p This was the first real web project I brought from initial idea to finished product, and I learned a lot doing it. Particularly interesting was taking the holistic point of view and considering the whole process rather than focusing on only the UX or the code. Looking back, there are certainly changes that could be made (for example: why isn't the user shown the recipes immediately? That is what they would be looking for), and I may revisit the project in the future with a more focused and design centered approaching, but all in all I am quite happy with how it turned out. 
-    footer
-        h1 Want more?
-        p
-            |If you want to read another case study, why not check out  
-            a(href="/tangible.html") Tangible Impact
-            |, a project investigating how the environmental impacts of consumer products can be tangibilized?
-        p
-            |If you're looking for something else, try heading back to the 
-            a(href="/") home page
-            |.
+                            figcaption Figure 1. Recipe overview page of the Jul utan djur website.
+                    section
+                        h2#problem.sectionHeader 2. Problem
+                        p Christmas time is wonderful in many aspects, but it is not great for animals: 400,000 Swedish pigs are killed every December, just to put meat on the table. Swedish Christmas food traditionally contains a lot of meat and fish, but nothing says that is the way it has to be. There are multitudes of great vegan recipes reinventing the Swedish tradition, and more coming every year. Jul utan djur was an attempt to gather the best of these recipes in the same place, to create a one stop shop for people looking to make their traditions more ethical and sustainable.
+                    section
+                        h2#designProcess.sectionHeader 3. Design Process
+                        p For this project, I played every role in the product chain: client, designer, coder, content creator (or rather, content gatherer - more on that later). This allowed me a great degree of freedom, but also meant that I had be careful to not go outside my scope. Furthermore, I came up with the idea in late October and decided that December 1st would be the perfect date to launch a project like this, giving me a neat one month timeframe.
+                        div
+                            h3#idea.sectionHeader 3.1. Idea & research
+                            p The idea arose spontaneously one day, and the work on it consisted mostly of verifying and developing it. To get inspired and gather information about existing patterns and conventions I explored a number of recipe websites, taking note on how they organized information, handled navigation, and so forth.
+                        div
+                            h3#sketching.sectionHeader 3.2. Sketching
+                            p When planning the layout and structure I decided to stick close to the identified recipe website format (because consistency is good) while still attempting to simplify things wherever I saw the possibility. Visually, I wanted to keep things simple and minimalistic in order to let the user really focus on the content - the recipes. 
+                            figure
+                                picture
+                                    source(srcset="/images/julutandjur-sketches.webp" type="image/webp")
+                                    img(src="/images/julutandjur-sketches.jpg" alt="Five post-it notes containing various pencil sketches of possible website layouts.")
+                                figcaption Figure 2. Rapid sketches on post-it notes.
+                            p Apart from the Start page and the About page, the site consists of three different views: a recipe overview page, showing all existing recipe categories; a category recipe page, showing recipes for a particular category; and the single recipe page, showing the recipe itself. On both the overview and the category pages there is a search field, allowing users to simply start typing in order to filter the displayed recipes.
+                        div
+                            h3#coding.sectionHeader 3.3 Coding & Content Creation
+                            p
+                                |For implementing the frontend, I wanted to keep things lightweight and fell for the
+                                a(href="https://getskeleton.com") Skeleton CSS framework
+                                |, which had every feature I wanted and very little else. For easier organization and updateability, the frontend was built using React, which was the hippest framework at the time and worked very well in this implementation. To serve all this, I decided to keep it simple and stick to what I knew, and so went with an Express server in a basic configuration.
+                            p As soon as the structure was in place it was time to start filling it with content. This meant gathering recipes! To do this, I simply looked online for great recipes, and whenever I found a good one, I simply contacted the creator and asked if I could use it. Everyone was incredibly nice and most agreed to not only let me use the recipes but also their pictures of the dishes. For the few recipes where this was not a case, or where there were no pictures of the dishes, I simply had to cook up a (delicious) batch and take pictures myself. 
+                    section
+                        h2#result.sectionHeader 4. Result
+                        p 
+                            |The final result was launched on December 1st, and drew over a thousand visitors on the first day. It can be visited on 
+                            a(href="https://julutandjur.se") julutandjur.se
+                            |.
+                        #figures.grid
+                            figure
+                                picture
+                                    source(srcset="/images/julutandjur-start.webp" type="image/webp")
+                                    img(src="/images/julutandjur-start.jpg" alt="A screenshot showing a website with the title \"Jul utan djur\" and four paragraphs of text.")
+                                figcaption Figure 3. The starting page or the Jul utan djur website.
+                            figure
+                                picture
+                                    source(srcset="/images/julutandjur-recipes.webp" type="image/webp")
+                                    img(src="/images/julutandjur-recipes.png" alt="A screenshot showing a website with the title \"Jul utan djur\" and a grid displaying pictures of food with text underneath.")
+                                figcaption Figure 4. The recipe overview page.
+                            figure
+                                picture
+                                    source(srcset="/images/julutandjur-category.webp" type="image/webp")
+                                    img(src="/images/julutandjur-category.jpg" alt="A screenshot showing a website with the title \"Jul utan djur\" and a grid displaying pictures of food with text underneath.")
+                                figcaption Figure 5. The "herring" category recipes page.
+                            figure
+                                picture
+                                    source(srcset="/images/julutandjur-recipe.webp" type="image/webp")
+                                    img(src="/images/julutandjur-recipe.png" alt="A screenshot showing a website with the title \"Jul utan djur\" and a recipe page, showing a description, a picture of the finished dish, a list of ingredients, and a set of instructions.")
+                                figcaption Figure 6. The recipe page.
+                    section
+                        h2#reflections.sectionHeader 5. Reflections
+                        p This was the first real web project I brought from initial idea to finished product, and I learned a lot doing it. Particularly interesting was taking the holistic point of view and considering the whole process rather than focusing on only the UX or the code. Looking back, there are certainly changes that could be made (for example: why isn't the user shown the recipes immediately? That is what they would be looking for), and I may revisit the project in the future with a more focused and design centered approaching, but all in all I am quite happy with how it turned out. 
+        footer
+            h2 Want more?
+            p
+                |If you want to read another case study, why not check out  
+                a(href="/tangible.html") Tangible Impact
+                |, a project investigating how the environmental impacts of consumer products can be tangibilized?
+            p
+                |If you're looking for something else, try heading back to the 
+                a(href="/") home page
+                |.

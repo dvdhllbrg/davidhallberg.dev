@@ -11,7 +11,7 @@ const quotes = [
     {person: 'Susan Kare', text: 'Good design\'s not about what medium you\'re working in, it\'s about thinking hard about what you want to do and what you have to work with before you start.'}
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
+function addQuote() {
     let quote = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById('quoteText').textContent = quote.text;
     document.getElementById('quotePerson').textContent = quote.person;
@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         document.getElementById('quoteSrc').remove();
     }
-    
+}
+
+function addTableOfContents() {
     const sections = document.getElementsByClassName('sectionHeader');
     const links = document.querySelectorAll('#toc li a');
 
@@ -42,4 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if(document.getElementById('quoteText')) {
+        addQuote();
+    }
+
+    if(document.getElementById('toc')) {
+        addTableOfContents();
+    }
+    
 });
