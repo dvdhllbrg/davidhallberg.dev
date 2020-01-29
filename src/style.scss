@@ -235,10 +235,10 @@ ul li {
 
 header {
     height: 100vh;
-    padding-top: 2.5rem;
 
     @media screen and (min-width: $break-small) {
         height: auto;
+        padding-top: 2.5rem;
     }
     p {
         font-size: $h5;
@@ -388,7 +388,6 @@ main, footer {
         
         header {
             height: 50vh;
-            padding-top: 0;
         }
 
         main {
