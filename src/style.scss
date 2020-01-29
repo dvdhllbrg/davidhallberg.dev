@@ -147,7 +147,7 @@ body {
     font-weight: 400;
     background: #FFFFFF;
     color: #333;
-    padding: 2.5rem 1rem;
+    padding: 0 1rem;
     line-height: 1.65;
 
     p, dl {
@@ -235,6 +235,7 @@ ul li {
 
 header {
     height: 100vh;
+    padding-top: 2.5rem;
 
     @media screen and (min-width: $break-small) {
         height: auto;
