@@ -147,7 +147,7 @@ body {
     font-weight: 400;
     background: #FFFFFF;
     color: #333;
-    padding: 0 1rem;
+    padding: 2.5rem 1rem;
     line-height: 1.65;
 
     p, dl {
@@ -244,6 +244,7 @@ header {
 
         &.subtitle {
             font-size: $h3;
+            line-height: 1.4;
         }
     }
 
@@ -415,6 +416,7 @@ main, footer {
 }
 
 blockquote {
+    line-height: 1.4;
     margin-bottom: 2rem;
     p {
         font-style: italic;
