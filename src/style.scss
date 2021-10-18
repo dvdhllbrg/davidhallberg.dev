@@ -426,6 +426,26 @@ blockquote {
 
     footer {
         text-align: right;
+        justify-content: end;
+        grid-template-columns: auto auto;
+        align-items: center;
+
+        #quoteSrcWrapper: {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #refreshQuote {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            color: #222;
+            background-color: #fff;
+            padding: 0.33rem 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+            margin-left: 1rem;
+        }
     }
 }
 

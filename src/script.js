@@ -18,7 +18,7 @@ function addQuote() {
     if(quote.source) {
         document.getElementById('quoteSrc').textContent = quote.source;
     } else {
-        document.getElementById('quoteSrc').remove();
+        document.getElementById('quoteSrc').textContent = '';
     }
 }
 
@@ -54,5 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if(document.getElementById('toc')) {
         addTableOfContents();
     }
-    
+
+    document.getElementById('refreshQuote').addEventListener('click', () => {
+        addQuote();
+    })
 });
