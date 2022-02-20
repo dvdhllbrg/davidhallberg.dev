@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="I am David Hallberg Jönsson, a UX designer in Gothenburg, Sweden. I help humans and computers get along."
+    />
+    <title>Jul utan djur case study | David Hallberg Jönsson</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      data-website-id="87b72d58-ad90-48d5-9de8-58a1d67073a1"
+      data-host-url="https://umami-five-cyan.vercel.app"
+      src="script.js"
+    ></script>
+  </head>
+  <body>
+    <nav><a href="/">Home</a></nav>
+    <header>
+      <div>
+        <h1>Jul utan djur</h1>
+        <p class="subtitle">
+          Inspiring a more ethical and sustainable holiday food tradition.
+        </p>
+      </div>
+    </header>
+    <div id="container">
+      <aside>
+        <nav aria-labelledby="tocHeader">
+          <h2 id="tocHeader">Table of contents</h2>
+          <ol id="toc">
+            <li><a href="#projectOverview">Project overview</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li>
+              <a href="#designProcess">Design process</a>
+              <ol>
+                <li><a href="#idea">Idea & Research</a></li>
+                <li><a href="#prototyping">Sketching</a></li>
+                <li><a href="#coding">Coding & Content Creation</a></li>
+              </ol>
+            </li>
+            <li><a href="#result">Result</a></li>
+            <li><a href="#reflections">Reflections</a></li>
+          </ol>
+        </nav>
+      </aside>
+      <main>
+        <article>
+          <section>
+            <h2 class="sectionHeader" id="projectOverview">
+              1. Project overview
+            </h2>
+            <p>
+              <i
+                >How can people be made aware of existing alternatives to their
+                traditional food choices? How can the obstacles to affecting
+                positive change in one's food customs be lowered?</i
+              >
+            </p>
+            <div class="grid" id="details">
+              <div>
+                <span class="subtitle">Context</span>
+                <ul>
+                  <li>One month</li>
+                  <li>Personal project</li>
+                </ul>
+              </div>
+              <div>
+                <span class="subtitle">Teammates</span>
+                <ul>
+                  <li>None</li>
+                </ul>
+              </div>
+              <div>
+                <span class="subtitle">My contribution</span>
+                <ul>
+                  <li>Concept generation</li>
+                  <li>UX/visual design</li>
+                  <li>UX Implmentation</li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              <a href="https://julutandjur.se">Jul utan djur </a>("Christmas
+              without animals") is a website containing a collection of vegan
+              recipes of traditional Swedish Christmas dishes. The intention is
+              to showcase the numerous vegan Christmas dishes that have been
+              created and inspire people to make an ethical and sustainable
+              choice. To date, roughly 7,000 users have visisted the website.
+            </p>
+            <figure>
+              <picture>
+                <source
+                  srcset="/images/julutandjur-recipes.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/images/julutandjur-recipes.png"
+                  alt='A screenshot showing a website with the title "Jul utan djur" and a grid displaying pictures of food with text underneath.'
+                />
+              </picture>
+              <figcaption>
+                Figure 1. Recipe overview page of the Jul utan djur website.
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h2 class="sectionHeader" id="problem">2. Problem</h2>
+            <p>
+              Christmas time is wonderful in many aspects, but it is not great
+              for animals: 400,000 Swedish pigs are killed every December, just
+              to put meat on the table. Swedish Christmas food traditionally
+              contains a lot of meat and fish, but nothing says that is the way
+              it has to be. There are multitudes of great vegan recipes
+              reinventing the Swedish tradition, and more coming every year. Jul
+              utan djur was an attempt to gather the best of these recipes in
+              the same place, to create a one stop shop for people looking to
+              make their traditions more ethical and sustainable.
+            </p>
+          </section>
+          <section>
+            <h2 class="sectionHeader" id="designProcess">3. Design Process</h2>
+            <p>
+              For this project, I played every role in the product chain:
+              client, designer, coder, content creator (or rather, content
+              gatherer - more on that later). This allowed me a great degree of
+              freedom, but also meant that I had be careful to not go outside my
+              scope. Furthermore, I came up with the idea in late October and
+              decided that December 1st would be the perfect date to launch a
+              project like this, giving me a neat one month timeframe.
+            </p>
+            <div>
+              <h3 class="sectionHeader" id="idea">3.1. Idea & research</h3>
+              <p>
+                The idea arose spontaneously one day, and the work on it
+                consisted mostly of verifying and developing it. To get inspired
+                and gather information about existing patterns and conventions I
+                explored a number of recipe websites, taking note on how they
+                organized information, handled navigation, and so forth.
+              </p>
+            </div>
+            <div>
+              <h3 class="sectionHeader" id="sketching">3.2. Sketching</h3>
+              <p>
+                When planning the layout and structure I decided to stick close
+                to the identified recipe website format (because consistency is
+                good) while still attempting to simplify things wherever I saw
+                the possibility. Visually, I wanted to keep things simple and
+                minimalistic in order to let the user really focus on the
+                content - the recipes.
+              </p>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/julutandjur-sketches.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/julutandjur-sketches.jpg"
+                    alt="Five post-it notes containing various pencil sketches of possible website layouts."
+                  />
+                </picture>
+                <figcaption>
+                  Figure 2. Rapid sketches on post-it notes.
+                </figcaption>
+              </figure>
+              <p>
+                Apart from the Start page and the About page, the site consists
+                of three different views: a recipe overview page, showing all
+                existing recipe categories; a category recipe page, showing
+                recipes for a particular category; and the single recipe page,
+                showing the recipe itself. On both the overview and the category
+                pages there is a search field, allowing users to simply start
+                typing in order to filter the displayed recipes.
+              </p>
+            </div>
+            <div>
+              <h3 class="sectionHeader" id="coding">
+                3.3 Coding & Content Creation
+              </h3>
+              <p>
+                For implementing the frontend, I wanted to keep things
+                lightweight and fell for the<a href="https://getskeleton.com"
+                  >Skeleton CSS framework</a
+                >, which had every feature I wanted and very little else. For
+                easier organization and updateability, the frontend was built
+                using React, which was the hippest framework at the time and
+                worked very well in this implementation. To serve all this, I
+                decided to keep it simple and stick to what I knew, and so went
+                with an Express server in a basic configuration.
+              </p>
+              <p>
+                As soon as the structure was in place it was time to start
+                filling it with content. This meant gathering recipes! To do
+                this, I simply looked online for great recipes, and whenever I
+                found a good one, I simply contacted the creator and asked if I
+                could use it. Everyone was incredibly nice and most agreed to
+                not only let me use the recipes but also their pictures of the
+                dishes. For the few recipes where this was not a case, or where
+                there were no pictures of the dishes, I simply had to cook up a
+                (delicious) batch and take pictures myself.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2 class="sectionHeader" id="result">4. Result</h2>
+            <p>
+              The final result was launched on December 1st, and drew over a
+              thousand visitors on the first day. It can be visited on
+              <a href="https://julutandjur.se">julutandjur.se</a>.
+            </p>
+            <div class="grid" id="figures">
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/julutandjur-start.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/julutandjur-start.jpg"
+                    alt='A screenshot showing a website with the title "Jul utan djur" and four paragraphs of text.'
+                  />
+                </picture>
+                <figcaption>
+                  Figure 3. The starting page or the Jul utan djur website.
+                </figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/julutandjur-recipes.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/julutandjur-recipes.png"
+                    alt='A screenshot showing a website with the title "Jul utan djur" and a grid displaying pictures of food with text underneath.'
+                  />
+                </picture>
+                <figcaption>Figure 4. The recipe overview page.</figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/julutandjur-category.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/julutandjur-category.jpg"
+                    alt='A screenshot showing a website with the title "Jul utan djur" and a grid displaying pictures of food with text underneath.'
+                  />
+                </picture>
+                <figcaption>
+                  Figure 5. The "herring" category recipes page.
+                </figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source
+                    srcset="/images/julutandjur-recipe.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/images/julutandjur-recipe.png"
+                    alt='A screenshot showing a website with the title "Jul utan djur" and a recipe page, showing a description, a picture of the finished dish, a list of ingredients, and a set of instructions.'
+                  />
+                </picture>
+                <figcaption>Figure 6. The recipe page.</figcaption>
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h2 class="sectionHeader" id="reflections">5. Reflections</h2>
+            <p>
+              This was the first real web project I brought from initial idea to
+              finished product, and I learned a lot doing it. Particularly
+              interesting was taking the holistic point of view and considering
+              the whole process rather than focusing on only the UX or the code.
+              Looking back, there are certainly changes that could be made (for
+              example: why isn't the user shown the recipes immediately? That is
+              what they would be looking for), and I may revisit the project in
+              the future with a more focused and design centered approaching,
+              but all in all I am quite happy with how it turned out.
+            </p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <footer>
+      <h2>Want more?</h2>
+      <p>
+        If you want to read another case study, why not check out
+        <a href="/tangible.html">Tangible Impact</a>, a project investigating
+        how the environmental impacts of consumer products can be tangibilized?
+      </p>
+      <p>
+        If you're looking for something else, try heading back to the
+        <a href="/">home page</a>.
+      </p>
+    </footer>
+  </body>
+</html>
