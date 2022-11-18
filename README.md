@@ -1,2 +1,2 @@
-# davidhallberg.design
-Portfolio at https://davidhallberg.design
+# davidhallberg.dev
+Portfolio at https://davidhallberg.dev
